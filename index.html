@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OS-Simulator</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
   </head>
+
   <body>
     <div id="wrapper">
       <div class="content">
@@ -50,20 +52,27 @@
             </table>
 
             <div class="processAdder">
-                <span class="adderTitle">Add a process</span>
+                <div><span class="adderTitle">Add a process</span></div>
                 <div class="processDetailsInput">
                     <div class="processIDField">
-                        <input type="number" name="processId" class="inpField" placeholder="Process ID">
+                        <input type="number" name="processId" class="inpField" id="pIDInpField" placeholder="Process ID">
                     </div>
                     <div class="arrivalTimeField">
-                        <input type="number" name="arrivalTime" class="inpField" placeholder="Arrival Time">
+                        <input type="number" name="arrivalTime" class="inpField" id="aTInpField" placeholder="Arrival Time">
                     </div>
                     <div class="burstTimeField">
-                        <input type="number" name="burstTime" class="inpField" placeholder="Burst Time">
+                        <input type="number" name="burstTime" class="inpField" id="bTInpField" placeholder="Burst Time">
                     </div>
                     <div class="addButton">
-                        <button type="button" name="addProcess" class="addGreenButton">Add</button>
+                        <button type="button" name="addProcess" class="addGreenButton" id="addProcess">Add</button>
                     </div>
+                </div>
+                <div class="timeQuantAndExe">
+                  <div class="timeQuantInput">
+                    <input type="number" name="timeQuantum" class="inpField" id="tQInpField" placeholder="Time Quantum">
+                  </div>
+                  <div class="goBtn">
+                    <button type="button" name="go" class="goButton" id="go">Go</button>
                 </div>
             </div>
         </div>

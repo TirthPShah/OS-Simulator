@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0d1116;
+}
+
+#wrapper {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+.content {
+  background-color: #0d1116;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.nav-tool {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 0.5px solid #5b636ac0;
+  background-color: #0e111a;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  padding: 0rem 1rem 0.4rem 1rem;
+  gap: 2rem;
+}
+
+.toolbar-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0.2rem 0.5rem 0.2rem 0.2rem;
+  border-radius: 5px;
+}
+
+.tool-logo {
+  width: 29px;
+}
+
+.toolbar-item:hover {
+  background-color: #838e9729;
+  transition: background-color 0s;
+}
+
+.tool-text {
+  color: #e6edf3;
+  font-family: Noto Sans;
+  font-size: 0.95rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem 0.7rem 1rem;
+}
+
+.logo {
+  width: 31px;
+  border: 0.25px solid #5b636ac0;
+  border-radius: 15%;
+}
+
+.logo:hover {
+  background-color: #838e9729;
+  transition: background-color 0s;
+}
+.logo-div {
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+}
+
+.logo-text {
+  color: #e6edf3;
+  margin-left: 10px;
+  font-family: Noto Sans;
+}
+
+.processInput {
+  max-width: 70%;
+  margin: 2.5rem auto;
+}
+
+.processTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem;
+  border: 0.25px solid #e6edf3;
+}
+
+table,
+th,
+td,
+tr {
+  border-collapse: collapse;
+  border: 0.25px solid #e6edf3;
+}
+
+.headCell {
+  background-color: #838e9729;
+  color: #e6edf3;
+  width: 16%;
+  font-family: Noto Sans;
+  font-weight: 200;
+  padding: 0.5rem 0;
+}
+
+.processAdder {
+  max-width: 100%;
+  width: fit-content;
+  margin: 2.5rem 1rem;
+  border: 0.25px solid #e6edf3;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.adderTitle {
+  color: #e6edf3;
+  font-family: Noto Sans;
+}
+
+.processDetailsInput {
+  margin: 0.9rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.inpField {
+  font-family: Noto Sans;
+  background-color: #e6edf3;
+  color: gray;
+  height: 2.5rem;
+  border-radius: 5px;
+  padding: 0.5rem;
+  border: none;
+  overflow: scroll;
+}
+
+.addGreenButton {
+  height: 2.5rem;
+  width: 10rem;
+  background-color: #238636;
+  color: #e6edf3;
+  font-family: Noto Sans;
+  border: none;
+  border-radius: 5px;
+}
+
+.addGreenButton:hover {
+  cursor: pointer;
+  background-color: #2a903b;
+}

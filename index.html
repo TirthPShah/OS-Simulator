@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OS-Simulator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="content">
+        <div class="nav-tool">
+          <div class="navbar">
+            <div class="logo-div">
+              <img src="./assets/icons8-menu-30.png" alt="" class="logo" />
+              <div class="logo-text">OS-Simulator</div>
+            </div>
+          </div>
+
+          <div class="toolbar">
+            <div class="toolbar-item">
+              <img
+                src="./assets/icons8-schedule-30.png"
+                alt=""
+                class="tool-logo"
+              />
+              <div class="tool-text">Round Robin Scheduler</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="processInput">
+          
+            <table class="processTable">
+                
+                <thead class="tableHead">
+                    <tr class="headRow">
+                        <th class="headCell" id="topLeft">Process ID</th>
+                        <th class="headCell">Arrival Time</th>
+                        <th class="headCell">Burst Time</th>
+                        <th class="headCell">Completion Time</th>
+                        <th class="headCell">TurnAround Time</th>
+                        <th class="headCell" id="topRight">Waiting Time</th>
+                    </tr>
+                </thead>
+
+                <tbody class="tableBody">
+                </tbody>
+            
+            </table>
+
+            <div class="processAdder">
+                <span class="adderTitle">Add a process</span>
+                <div class="processDetailsInput">
+                    <div class="processIDField">
+                        <input type="number" name="processId" class="inpField" placeholder="Process ID">
+                    </div>
+                    <div class="arrivalTimeField">
+                        <input type="number" name="arrivalTime" class="inpField" placeholder="Arrival Time">
+                    </div>
+                    <div class="burstTimeField">
+                        <input type="number" name="burstTime" class="inpField" placeholder="Burst Time">
+                    </div>
+                    <div class="addButton">
+                        <button type="button" name="addProcess" class="addGreenButton">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -35,7 +35,7 @@ body {
 .toolbar {
   display: flex;
   align-items: center;
-  padding: 0rem 1rem 0.4rem 1rem;
+  padding: 0rem 1rem 0rem 1rem;
   gap: 2rem;
 }
 
@@ -54,6 +54,7 @@ body {
 .toolbar-item:hover {
   background-color: #838e9729;
   transition: background-color 0s;
+  cursor: pointer;
 }
 
 .tool-text {
@@ -91,16 +92,36 @@ body {
   font-family: Noto Sans;
 }
 
+#schedulerDiv {
+  margin-bottom: 0px;
+  border-bottom: 1px solid #2a903b;
+  padding-bottom: 0.3rem;
+}
+
 .processInput {
   max-width: 70%;
   margin: 2.5rem auto;
 }
 
+.tableDiv {
+  width: 100%;
+  overflow-x: auto;
+  transform: translateX(1rem);
+}
+
 .processTable {
   width: 100%;
   border-collapse: collapse;
-  margin: 1rem;
+  margin: 1rem 0rem;
   border: 0.25px solid #e6edf3;
+  min-width: 607px;
+  overflow-x: auto;
+}
+
+@media screen and (max-width: 870px) {
+  .tableDiv {
+    overflow-x: scroll;
+  }
 }
 
 table,
@@ -181,7 +202,7 @@ input::-webkit-inner-spin-button {
 }
 
 /* To remove arrows from input field from Firefox */
-input[type=number] {
+input[type="number"] {
   -moz-appearance: textfield;
   appearance: textfield;
 }
@@ -211,6 +232,6 @@ input[type=number] {
 }
 
 .goButton:hover {
-  cursor:pointer;
+  cursor: pointer;
   background-color: #2a903b;
 }

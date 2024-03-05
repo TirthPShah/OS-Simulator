@@ -76,7 +76,7 @@ document.getElementById("go")?.addEventListener("click", function () {
 
                 addEntry("Time: " + currTime + " units. Process " + currProcess.processId + " is going to run for " + currProcess.remainingBurstTime + " units.", list);
             
-                let temp2 = currTime + currProcess.remainingBurstTime;
+                let temp2 = currTime + parseInt(currProcess.remainingBurstTime);
             
                 while (currTime != temp2) {
 
@@ -96,8 +96,8 @@ document.getElementById("go")?.addEventListener("click", function () {
             
                 currProcess.remainingBurstTime = 0;
                 currProcess.completionTime = currTime;
-                currProcess.turnAroundTime = currProcess.completionTime - currProcess.arrivalTime;
-                currProcess.waitingTime = currProcess.turnAroundTime - currProcess.burstTime;
+                currProcess.turnAroundTime = parseInt(currProcess.completionTime) - parseInt(currProcess.arrivalTime);
+                currProcess.waitingTime = parseInt(currProcess.turnAroundTime) - parseInt(currProcess.burstTime);
 
                 avgTAT += parseInt(currProcess.turnAroundTime);
                 avgWT += parseInt(currProcess.waitingTime);
@@ -130,7 +130,7 @@ document.getElementById("go")?.addEventListener("click", function () {
                     }
                 }
 
-                currProcess.remainingBurstTime -= timeQuantum;
+                currProcess.remainingBurstTime = parseInt(currProcess.remainingBurstTime) - timeQuantum;
                 queue.push(currProcess);
 
                 addEntry("Time: " + currTime + " units. Process " + currProcess.processId + " with remaining burst time " + currProcess.remainingBurstTime + " units. is going to be added to the queue.", list);

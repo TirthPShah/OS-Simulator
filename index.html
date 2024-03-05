@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,7 +12,9 @@
   <body>
     <div id="wrapper">
       <div class="content">
+        
         <div class="nav-tool">
+          
           <div class="navbar">
             <div class="logo-div">
               <img src="./assets/icons8-menu-30.png" alt="" class="logo" />
@@ -22,18 +25,15 @@
           <div class="toolbar">
             <div id="schedulerDiv">
               <div class="toolbar-item">
-                <img
-                  src="./assets/icons8-schedule-30.png"
-                  alt=""
-                  class="tool-logo"
-                />
+                <img src="./assets/icons8-schedule-30.png" alt="" class="tool-logo"/>
                 <div class="tool-text">Round Robin Scheduler</div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="processInput">
+        <div class="processDetails">
+          
           <div class="tableDiv">
             <table class="processTable">
                 
@@ -54,30 +54,52 @@
             </table>
           </div>
           
-            <div class="processAdder">
-                <div><span class="adderTitle">Add a process</span></div>
-                <div class="processDetailsInput">
-                    <div class="processIDField">
-                        <input type="number" name="processId" class="inpField" id="pIDInpField" placeholder="Process ID">
-                    </div>
-                    <div class="arrivalTimeField">
-                        <input type="number" name="arrivalTime" class="inpField" id="aTInpField" placeholder="Arrival Time">
-                    </div>
-                    <div class="burstTimeField">
-                        <input type="number" name="burstTime" class="inpField" id="bTInpField" placeholder="Burst Time">
-                    </div>
-                    <div class="addButton">
-                        <button type="button" name="addProcess" class="addGreenButton" id="addProcess">Add</button>
-                    </div>
-                </div>
-                <div class="timeQuantAndExe">
-                  <div class="timeQuantInput">
-                    <input type="number" name="timeQuantum" class="inpField" id="tQInpField" placeholder="Time Quantum">
-                  </div>
-                  <div class="goBtn">
-                    <button type="button" name="go" class="goButton" id="go">Go</button>
-                </div>
+          <div class="processAdder">
+
+            <div><span class="adderTitle">Add a process</span></div>
+            <div class="processDetailsInput">
+              <div class="processIDField">
+                <input type="number" name="processId" class="inpField" id="pIDInpField" placeholder="Process ID">
+              </div>
+              <div class="arrivalTimeField">
+                <input type="number" name="arrivalTime" class="inpField" id="aTInpField" placeholder="Arrival Time">
+              </div>
+              <div class="burstTimeField">
+                <input type="number" name="burstTime" class="inpField" id="bTInpField" placeholder="Burst Time">
+              </div>
+              <div class="addButton">
+                <button type="button" name="addProcess" class="addGreenButton" id="addProcess">Add</button>
+              </div>
             </div>
+                
+            <div class="timeQuantAndExe">
+              <div class="timeQuantInput">
+                <input type="number" name="timeQuantum" class="inpField" id="tQInpField" placeholder="Time Quantum">
+              </div>
+              <div class="goBtn">
+                <button type="button" name="go" class="goButton" id="go">Go</button>
+              </div>
+              <div class="resetBtn">
+                <button type="button" name="reset" class="resetButton" id="reset">Reset</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="processorLog">
+            <div><span class="logTitle">Processor Log</span></div>
+            <div class="logListDiv">
+              <ul class="logList" id="logList">
+              </ul>
+            </div>
+          </div>
+
+          <div class="schedulingStat" id="schedulingStat">
+            <div><span class="statTitle">Scheduling Stats</span></div>
+            <div class="statListDiv">
+              <ul class="statList" id="statList">
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>

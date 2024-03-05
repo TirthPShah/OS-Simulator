@@ -44,6 +44,8 @@ document.getElementById("go")?.addEventListener("click", function () {
     let tq = document.getElementById("tQInpField")?.value;
     timeQuantum = parseInt(tq);
 
+    document.getElementById("tQInpField").value = "";
+
     processes.sort((a, b) => a.arrivalTime - b.arrivalTime);
 
     let list = document.getElementById("logList");

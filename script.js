@@ -147,6 +147,9 @@ document.getElementById("go")?.addEventListener("click", function () {
     avgTAT /= processCount;
     avgWT /= processCount;
 
+    avgTAT = Number(avgTAT.toFixed(2));
+    avgWT = Number(avgWT.toFixed(2));
+
     var statList = document.getElementById("statList");
 
     var schedulingStatDiv = document.getElementById("schedulingStat");

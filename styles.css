@@ -17,12 +17,50 @@ body {
   height: 100vh;
 }
 
+#wrapper::-webkit-scrollbar-button {
+  display: none;
+}
+
+#wrapper::-webkit-scrollbar {
+  width: 8px;
+  color: #6d6f71
+}
+
+#wrapper::-webkit-scrollbar-track {
+  color: #0f1216;
+}
+
+#wrapper::-webkit-scrollbar-thumb {
+  background-color: #6d6f71;
+  border-radius: 10px;
+  background-clip: padding-box;
+}
+
 .content {
   background-color: #0d1116;
   height: 100vh;
   width: 100vw;
   overflow-x: auto;
   overflow-y: scroll;
+}
+
+.content::-webkit-scrollbar-button {
+  display: none;
+}
+
+.content::-webkit-scrollbar {
+  width: 8px;
+  color: #6d6f71
+}
+
+.content::-webkit-scrollbar-track {
+  color: #0f1216;
+}
+
+.contnet::-webkit-scrollbar-thumb {
+  background-color: #6d6f71;
+  border-radius: 10px;
+  background-clip: padding-box;
 }
 
 .nav-tool {
@@ -109,6 +147,25 @@ body {
   transform: translateX(1rem);
 }
 
+.tableDiv::-webkit-scrollbar-button {
+  display: none;
+}
+
+.tableDiv::-webkit-scrollbar {
+  width: 8px;
+  color: #6d6f71
+}
+
+.tableDiv::-webkit-scrollbar-track {
+  color: #0f1216;
+}
+
+.tableDiv::-webkit-scrollbar-thumb {
+  background-color: #6d6f71;
+  border-radius: 10px;
+  background-clip: padding-box;
+}
+
 .processTable {
   width: 100%;
   border-collapse: collapse;
@@ -118,9 +175,47 @@ body {
   overflow-x: auto;
 }
 
+.processTable::-webkit-scrollbar-button {
+  display: none;
+}
+
+.processTable::-webkit-scrollbar {
+  width: 8px;
+  color: #6d6f71
+}
+
+.processTable::-webkit-scrollbar-track {
+  color: #0f1216;
+}
+
+.processTable::-webkit-scrollbar-thumb {
+  background-color: #6d6f71;
+  border-radius: 10px;
+  background-clip: padding-box;
+}
+
 @media screen and (max-width: 870px) {
   .tableDiv {
     overflow-x: scroll;
+  }
+
+  .tableDiv::-webkit-scrollbar-button {
+    display: none;
+  }
+  
+  .tableDiv::-webkit-scrollbar {
+    width: 8px;
+    color: #6d6f71
+  }
+  
+  .tableDiv::-webkit-scrollbar-track {
+    color: #0f1216;
+  }
+  
+  .tableDiv::-webkit-scrollbar-thumb {
+    background-color: #6d6f71;
+    border-radius: 10px;
+    background-clip: padding-box;
   }
 }
 
@@ -155,6 +250,25 @@ tr {
   overflow: scroll;
 }
 
+.processAdder::-webkit-scrollbar-button {
+  display: none;
+}
+
+.processAdder::-webkit-scrollbar {
+  width: 8px;
+  color: #6d6f71
+}
+
+.processAdder::-webkit-scrollbar-track {
+  color: #0f1216;
+}
+
+.processAdder::-webkit-scrollbar-thumb {
+  background-color: #6d6f71;
+  border-radius: 10px;
+  background-clip: padding-box;
+}
+
 .adderTitle {
   color: #e6edf3;
   font-family: Noto Sans;
@@ -176,6 +290,25 @@ tr {
   padding: 0.5rem;
   border: none;
   overflow: scroll;
+}
+
+.inpField::-webkit-scrollbar-button {
+  display: none;
+}
+
+.inpField::-webkit-scrollbar {
+  width: 8px;
+  color: #6d6f71
+}
+
+.inpField::-webkit-scrollbar-track {
+  color: #0f1216;
+}
+
+.inpField::-webkit-scrollbar-thumb {
+  background-color: #6d6f71;
+  border-radius: 10px;
+  background-clip: padding-box;
 }
 
 .addGreenButton {
@@ -272,7 +405,7 @@ input[type="number"] {
 .processorLog {
   width: 80%;
   height: 7%;
-  overflow-y: scroll;
+  overflow-y: hidden;
   margin: 2.5rem 1rem;
   border: 0.5px solid #77828bc0;
   border-radius: 10px;
@@ -293,7 +426,7 @@ input[type="number"] {
   display: flex;
   gap: 1.5rem;
   padding-right: 0.6rem;
-  overflow-y: scroll;
+  overflow-y: hidden;
 }
 
 #logList,
@@ -321,6 +454,6 @@ li::marker {
   border-radius: 10px;
   padding: 1rem;
   padding-bottom: 0rem;
-  overflow: scroll;
+  overflow: hidden;
   display: none;
 }

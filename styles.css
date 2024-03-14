@@ -22,11 +22,16 @@ body {
 }
 
 #wrapper::-webkit-scrollbar {
-  width: 8px;
+  width: 4px;
   color: #6d6f71
 }
 
 #wrapper::-webkit-scrollbar-track {
+  color: #0f1216;
+}
+
+#wrapper::-webkit-scrollbar-corner {
+  background-color: #0f1216;
   color: #0f1216;
 }
 
@@ -49,7 +54,7 @@ body {
 }
 
 .content::-webkit-scrollbar {
-  width: 8px;
+  width: 4px;
   color: #6d6f71
 }
 
@@ -61,6 +66,11 @@ body {
   background-color: #6d6f71;
   border-radius: 10px;
   background-clip: padding-box;
+}
+
+.content::-webkit-scrollbar-corner {
+  color: #0f1216;
+  background-color: #0f1216;
 }
 
 .nav-tool {
@@ -152,7 +162,7 @@ body {
 }
 
 .tableDiv::-webkit-scrollbar {
-  width: 8px;
+  width: 4px;
   color: #6d6f71
 }
 
@@ -164,6 +174,11 @@ body {
   background-color: #6d6f71;
   border-radius: 10px;
   background-clip: padding-box;
+}
+
+.tableDiv::-webkit-scrollbar-corner {
+  color: #0f1216;
+  background-color: #0f1216;
 }
 
 .processTable {
@@ -180,7 +195,7 @@ body {
 }
 
 .processTable::-webkit-scrollbar {
-  width: 8px;
+  width: 4px;
   color: #6d6f71
 }
 
@@ -194,6 +209,11 @@ body {
   background-clip: padding-box;
 }
 
+.processTable::-webkit-scrollbar-corner {
+  color: #0f1216;
+  background-color: #0f1216;
+}
+
 @media screen and (max-width: 870px) {
   .tableDiv {
     overflow-x: scroll;
@@ -204,7 +224,7 @@ body {
   }
   
   .tableDiv::-webkit-scrollbar {
-    width: 8px;
+    width: 4px;
     color: #6d6f71
   }
   
@@ -216,6 +236,11 @@ body {
     background-color: #6d6f71;
     border-radius: 10px;
     background-clip: padding-box;
+  }
+
+  .tableDiv::-webkit-scrollbar-corner{
+    color: #0f1216;
+    background-color: #0f1216;
   }
 }
 
@@ -255,7 +280,7 @@ tr {
 }
 
 .processAdder::-webkit-scrollbar {
-  width: 8px;
+  width: 4px;
   color: #6d6f71
 }
 
@@ -267,6 +292,11 @@ tr {
   background-color: #6d6f71;
   border-radius: 10px;
   background-clip: padding-box;
+}
+
+.processAdder::-webkit-scrollbar-corner{
+  color: #0f1216;
+  background-color: #0f1216;
 }
 
 .adderTitle {
@@ -297,7 +327,7 @@ tr {
 }
 
 .inpField::-webkit-scrollbar {
-  width: 8px;
+  width: 4px;
   color: #6d6f71
 }
 
@@ -309,6 +339,11 @@ tr {
   background-color: #6d6f71;
   border-radius: 10px;
   background-clip: padding-box;
+}
+
+.inpField::-webkit-scrollbar-corner{
+  color: #0f1216;
+  background-color: #0f1216;
 }
 
 .addGreenButton {
@@ -413,6 +448,30 @@ input[type="number"] {
   padding-bottom: 0rem;
 }
 
+.processorLog::-webkit-scrollbar-button {
+  display: none;
+}
+
+.processorLog::-webkit-scrollbar {
+  width: 4px;
+  color: #6d6f71
+}
+
+.processorLog::-webkit-scrollbar-track {
+  color: #0f1216;
+}
+
+.processorLog::-webkit-scrollbar-thumb {
+  background-color: #6d6f71;
+  border-radius: 10px;
+  background-clip: padding-box;
+}
+
+.processorLog::-webkit-scrollbar-corner{
+  color: #0f1216;
+  background-color: #0f1216;
+}
+
 .logTitle,
 .statTitle {
   color: #e6edf3;
@@ -456,4 +515,28 @@ li::marker {
   padding-bottom: 0rem;
   overflow: hidden;
   display: none;
+}
+
+#schedulingStat::-webkit-scrollbar-button {
+  display: none;
+}
+
+#schedulingStat::-webkit-scrollbar {
+  width: 4px;
+  color: #6d6f71
+}
+
+#schedulingStat::-webkit-scrollbar-track {
+  color: #0f1216;
+}
+
+#schedulingStat::-webkit-scrollbar-thumb {
+  background-color: #6d6f71;
+  border-radius: 10px;
+  background-clip: padding-box;
+}
+
+#schedulingStat::-webkit-scrollbar-corner{
+  color: #0f1216;
+  background-color: #0f1216;
 }

@@ -12,7 +12,7 @@ body {
 }
 
 #wrapper {
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
   height: 100vh;
 }
@@ -23,7 +23,7 @@ body {
 
 #wrapper::-webkit-scrollbar {
   width: 4px;
-  color: #6d6f71
+  color: #6d6f71;
 }
 
 #wrapper::-webkit-scrollbar-track {
@@ -46,7 +46,7 @@ body {
   height: 100vh;
   width: 100vw;
   overflow-x: auto;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .content::-webkit-scrollbar-button {
@@ -55,7 +55,7 @@ body {
 
 .content::-webkit-scrollbar {
   width: 4px;
-  color: #6d6f71
+  color: #6d6f71;
 }
 
 .content::-webkit-scrollbar-track {
@@ -163,7 +163,7 @@ body {
 
 .tableDiv::-webkit-scrollbar {
   width: 4px;
-  color: #6d6f71
+  color: #6d6f71;
 }
 
 .tableDiv::-webkit-scrollbar-track {
@@ -196,7 +196,7 @@ body {
 
 .processTable::-webkit-scrollbar {
   width: 4px;
-  color: #6d6f71
+  color: #6d6f71;
 }
 
 .processTable::-webkit-scrollbar-track {
@@ -216,29 +216,29 @@ body {
 
 @media screen and (max-width: 870px) {
   .tableDiv {
-    overflow-x: scroll;
+    overflow-x: auto;
   }
 
   .tableDiv::-webkit-scrollbar-button {
     display: none;
   }
-  
+
   .tableDiv::-webkit-scrollbar {
     width: 4px;
-    color: #6d6f71
+    color: #6d6f71;
   }
-  
+
   .tableDiv::-webkit-scrollbar-track {
     color: #0f1216;
   }
-  
+
   .tableDiv::-webkit-scrollbar-thumb {
     background-color: #6d6f71;
     border-radius: 10px;
     background-clip: padding-box;
   }
 
-  .tableDiv::-webkit-scrollbar-corner{
+  .tableDiv::-webkit-scrollbar-corner {
     color: #0f1216;
     background-color: #0f1216;
   }
@@ -272,7 +272,7 @@ tr {
   border: 0.5px solid #77828bc0;
   border-radius: 10px;
   padding: 1rem;
-  overflow: scroll;
+  overflow: auto;
 }
 
 .processAdder::-webkit-scrollbar-button {
@@ -281,7 +281,7 @@ tr {
 
 .processAdder::-webkit-scrollbar {
   width: 4px;
-  color: #6d6f71
+  color: #6d6f71;
 }
 
 .processAdder::-webkit-scrollbar-track {
@@ -294,7 +294,7 @@ tr {
   background-clip: padding-box;
 }
 
-.processAdder::-webkit-scrollbar-corner{
+.processAdder::-webkit-scrollbar-corner {
   color: #0f1216;
   background-color: #0f1216;
 }
@@ -319,7 +319,7 @@ tr {
   border-radius: 5px;
   padding: 0.5rem;
   border: none;
-  overflow: scroll;
+  overflow: auto;
 }
 
 .inpField::-webkit-scrollbar-button {
@@ -328,7 +328,7 @@ tr {
 
 .inpField::-webkit-scrollbar {
   width: 4px;
-  color: #6d6f71
+  color: #6d6f71;
 }
 
 .inpField::-webkit-scrollbar-track {
@@ -341,7 +341,7 @@ tr {
   background-clip: padding-box;
 }
 
-.inpField::-webkit-scrollbar-corner{
+.inpField::-webkit-scrollbar-corner {
   color: #0f1216;
   background-color: #0f1216;
 }
@@ -454,26 +454,21 @@ input[type="number"] {
 
 .processorLog::-webkit-scrollbar {
   width: 4px;
-  color: #6d6f71
+  color: #6d6f71;
 }
 
 .processorLog::-webkit-scrollbar-track {
   color: #0f1216;
 }
 
-.processorLog::-webkit-scrollbar-thumb {
-  background-color: #6d6f71;
-  border-radius: 10px;
-  background-clip: padding-box;
-}
-
-.processorLog::-webkit-scrollbar-corner{
+.processorLog::-webkit-scrollbar-corner {
   color: #0f1216;
   background-color: #0f1216;
 }
 
 .logTitle,
-.statTitle {
+.statTitle,
+.ganttTitle {
   color: #e6edf3;
   font-family: Noto Sans;
 }
@@ -514,7 +509,6 @@ li::marker {
   padding: 1rem;
   padding-bottom: 0rem;
   overflow: hidden;
-  display: none;
 }
 
 #schedulingStat::-webkit-scrollbar-button {
@@ -523,7 +517,7 @@ li::marker {
 
 #schedulingStat::-webkit-scrollbar {
   width: 4px;
-  color: #6d6f71
+  color: #6d6f71;
 }
 
 #schedulingStat::-webkit-scrollbar-track {
@@ -536,7 +530,50 @@ li::marker {
   background-clip: padding-box;
 }
 
-#schedulingStat::-webkit-scrollbar-corner{
+#schedulingStat::-webkit-scrollbar-corner {
   color: #0f1216;
   background-color: #0f1216;
+}
+
+#ganttChartDiv {
+  width: 80%;
+  margin: 2.5rem 1rem;
+  border: 0.5px solid #77828bc0;
+  border-radius: 10px;
+  padding: 1rem;
+  padding-bottom: 1rem;
+  overflow: hidden;
+}
+
+#ganttTitleDiv {
+  margin-bottom: 1rem;
+}
+
+#ganttChartDiv::-webkit-scrollbar-button {
+  display: none;
+}
+
+#ganttChartDiv::-webkit-scrollbar {
+  width: 4px;
+  color: #6d6f71;
+}
+
+#ganttChartDiv::-webkit-scrollbar-track {
+  color: #0f1216;
+}
+
+#ganttChartDiv::-webkit-scrollbar-thumb {
+  background-color: #6d6f71;
+  border-radius: 10px;
+  background-clip: padding-box;
+}
+
+#ganttChartDiv::-webkit-scrollbar-corner {
+  color: #0f1216;
+  background-color: #0f1216;
+}
+
+.canvasDiv {
+  width: 100%;
+  overflow: auto;
 }
